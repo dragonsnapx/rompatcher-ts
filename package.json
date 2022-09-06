@@ -1,0 +1,74 @@
+{
+  "name": "rompatcher.ts",
+  "version": "0.1.0",
+  "description": "Zero-dependency ROM patching library",
+  "author": "dragonsnapx",
+  "repository": "https://github.com/metachris/typescript-boilerplate",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "typescript",
+    "rom",
+    "patch",
+    "romhacking"
+  ],
+  "main": "./dist/tsc/main.js",
+  "types": "./dist/tsc/main.d.ts",
+  "browser": "./dist/esbuild/browser.js",
+  "bin": {
+    "my-cli-tool": "./dist/esbuild/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "test": "jest --passWithNoTests",
+    "clean": "rm -rf dist build package",
+    "ts-node": "ts-node",
+    "prettier": "prettier src/ --write",
+
+    "build": "tsc -p tsconfig.json",
+    "build-all": "npm run clean && npm run build && npm run esbuild-browser",
+
+    "esbuild-browser": "esbuild src/browser.ts --bundle --minify --sourcemap=external --outfile=dist/esbuild/browser.js",
+    "esbuild-browser:dev": "esbuild src/browser.ts --bundle --outfile=dist/esbuild/browser.js",
+    "esbuild-browser:watch": "esbuild src/browser.ts --bundle --watch --outfile=dist/esbuild/browser.js",
+    "esbuild-node": "esbuild src/cli.ts --bundle --platform=node --minify --sourcemap=external --outfile=dist/esbuild/cli.js",
+    "esbuild-node:dev": "esbuild src/cli.ts --bundle --platform=node --sourcemap=external --outfile=dist/esbuild/cli.js",
+    "esbuild-node:watch": "esbuild src/cli.ts --bundle --platform=node --watch --sourcemap=external --outfile=dist/esbuild/cli.js",
+
+    "docs:dev": "vite",
+    "docs:build": "tsc && vite build",
+    "docs:preview": "vite preview",
+    "docs:lint": "eslint docs/ --ext .js,.jsx,.ts,.tsx",
+    "docs:prettier": "prettier docs/src/ --write"
+  },
+  "devDependencies": {
+    "@heroicons/react": "^2.0.10",
+    "@types/file-saver": "^2.0.5",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.26",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "@vitejs/plugin-react": "^2.0.1",
+    "autoprefixer": "^10.4.8",
+    "esbuild": "^0.14.38",
+    "eslint": "^8.23.0",
+    "eslint-plugin-react": "^7.31.5",
+    "eslint-plugin-vue": "^9.4.0",
+    "file-saver": "^2.0.5",
+    "jest": "27.0.0",
+    "postcss": "^8.4.16",
+    "prettier": "2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-file-drop": "^3.1.5",
+    "tailwindcss": "^3.1.8",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.4.0",
+    "typedoc": "^0.22.15",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vite-plugin-pwa": "^0.12.6"
+  }
+}

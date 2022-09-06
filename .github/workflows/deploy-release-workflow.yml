@@ -1,0 +1,26 @@
+name: Deploy Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-release:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 16
+      uses: actions/setup-node@v1
+      with:
+        node-version: '16'
+    - name: npm install
+      run: npm install
+    - name: npm prettier
+      run: npm prettier
+    - name: npm lint
+      run: npm lint
+    - name: npm build
+      run: npm run build-all
+    - name: npm run test
+      run: npm run test

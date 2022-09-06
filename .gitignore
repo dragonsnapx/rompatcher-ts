@@ -1,0 +1,14 @@
+/node_modules/
+/build/
+/lib/
+.idea/*
+
+.DS_Store
+coverage
+*.log
+
+# Project exclude paths
+/dist/
+/docs/dist/
+
+.idea
