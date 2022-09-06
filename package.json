@@ -1,5 +1,5 @@
 {
-  "name": "rompatcher-ts",
+  "name": "rpatcher",
   "version": "0.1.0",
   "description": "Zero-dependency ROM patching library",
   "author": "dragonsnapx",
