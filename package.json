@@ -1,5 +1,5 @@
 {
-  "name": "rompatcher.ts",
+  "name": "rompatcher-ts",
   "version": "0.1.0",
   "description": "Zero-dependency ROM patching library",
   "author": "dragonsnapx",
@@ -11,8 +11,8 @@
     "patch",
     "romhacking"
   ],
-  "main": "./dist/tsc/main.js",
-  "types": "./dist/tsc/main.d.ts",
+  "main": "./dist/tsc/index.js",
+  "types": "./dist/tsc/index.d.ts",
   "browser": "./dist/esbuild/browser.js",
   "bin": {
     "my-cli-tool": "./dist/esbuild/cli.js"
