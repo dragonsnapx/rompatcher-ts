@@ -16,11 +16,11 @@ jobs:
         node-version: '16'
     - name: npm install
       run: npm install
-    - name: npm prettier
-      run: npm prettier
-    - name: npm lint
-      run: npm lint
-    - name: npm build
+    - name: npm run prettier
+      run: npm run prettier
+    - name: npm run lint
+      run: npm run lint
+    - name: npm run build
       run: npm run build-all
     - name: npm run test
       run: npm run test
