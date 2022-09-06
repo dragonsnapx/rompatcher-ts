@@ -28,8 +28,6 @@ As of now, only Browsers are supported. For Node support, check out [node-rompat
 ## Usage
 
 ```typescript
-import Patcher from 'rompatcher-ts';
-
 // 1. Initialize a patcher instance with a format.
 const patcher = new Patcher([
   new IPSPattern,
