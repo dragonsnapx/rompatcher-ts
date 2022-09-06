@@ -12,7 +12,7 @@ RomPatcher.ts is a re-write of MarcroBledo's [RomPatcher.js](https://www.marcrob
 To install, run
 
 ```npm
-npm install rompatcher-ts
+npm install rpatcher
 ```
 
 As of now, only Browsers are supported. For Node support, check out [node-rompatcher](https://gitlab.com/hearthero/node-rompatcher/-/blob/master/package.json) on Gitlab.
