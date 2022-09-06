@@ -158,7 +158,7 @@ const App: FC = () => {
         </button>
       </div>
       <div className="credits">
-        GPLv3 · dragonsnapx · <a>View on Github</a>
+        GPLv3 · dragonsnapx · <a href="https://github.com/dragonsnapx/rompatcher-ts">View on Github</a>
       </div>
     </div>
   );

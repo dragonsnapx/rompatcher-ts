@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="docs/public/android-chrome-192x192.png" />
+  <img alt="Logo" src="docs/public/android-chrome-192x192.png" />
 </p>
 
 # RomPatcher.ts
 > Zero-dependency JS ROM patching library for browsers
 
-### [Installable (PWA) Web Demo]()
+### [Installable (PWA) Web Demo](https://dragonsnapx.github.io/rompatcher-ts/)
 
 RomPatcher.ts is a re-write of MarcroBledo's [RomPatcher.js](https://www.marcrobledo.com/RomPatcher.js/) - providing modularity, typing & simplicity.
 
@@ -195,7 +195,7 @@ Refer to implemented examples and MarcroBledo's [RomPatcher.js](https://www.marc
 
 ## Examples
 
-View the source code for the web demo in the `docs/` directory, or go [here]() for the installable live demo.
+View the source code for the web demo in the `docs/` directory, or go [here](https://dragonsnapx.github.io/rompatcher-ts/) for the installable live demo.
 
 ## License
 
